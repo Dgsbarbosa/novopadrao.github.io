@@ -1,0 +1,75 @@
+#benefits {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    background-color: #00466b;
+
+}
+
+.benefits-title h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.benefits-itens {
+    /* border: 2px solid black; */
+    width: 70vw;
+    min-width: 300px;
+    
+   
+}
+
+.benefits-itens .row{
+    max-width: 100vw;
+}
+
+.benefits-itens .card{
+
+    background-image: linear-gradient(to left top, #3586ff, #2c80ff, #237afe, #1974fe, #0e6efd, #096bfb, #0467fa, #0064f8, #0063f6, #0062f4, #0061f2, #0060f0);
+   
+}
+
+.benefits-itens .card-title {
+    /* border: 2px solid black; */
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-weight: 900;
+    
+}
+
+.benefits-itens .card-title i{
+    /* border: 2px solid black; */
+    margin-left: 10px;
+}
+
+
+.benefits-itens .card-body p {
+    /* border: 2px solid black; */    
+    font-size: 0.8em;
+    color: white;
+    
+}
+
+     
+.benefits-button { 
+    /* border: 2px solid black;   */
+    padding: 20px;
+    
+    text-align: center;
+}
+.benefits-button button{
+    /* border: 2px solid rgb(255, 7, 7);   */
+    font-size: 1em;
+}
+
+
+.benefits-button button:hover{
+    transform: scale(1.1);
+}
