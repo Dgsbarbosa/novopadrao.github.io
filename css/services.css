@@ -12,11 +12,17 @@
 }
 
 /* Título */
+
+.service-title{
+  /* border: 1px solid black; */
+  text-align: center;
+  margin: 0 0 1.25rem 0;
+
+}
 .service-title h1 {
   text-align: center;
   font-size: 2rem;
   font-weight: 900;
-  margin: 0 0 1.25rem 0;
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
