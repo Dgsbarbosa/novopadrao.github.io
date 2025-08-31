@@ -1,0 +1,221 @@
+.monthly-plans{
+    /* border: 2px solid black; */
+    /* margin-top: 100px; */
+
+}
+
+/* ESTILOS PARA A SEÇÃO DE PLANOS MENSÁIS */
+.monthly-plans {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.plans-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.plans-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.plans-header h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.plan-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+}
+
+.plan-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.plan-price {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.price-label {
+    font-size: 0.9rem;
+    color: #666;
+    display: block;
+}
+
+.price-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.plan-description {
+    margin-bottom: 25px;
+}
+
+.plan-feature {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+}
+
+.plan-feature:last-child {
+    border-bottom: none;
+}
+
+.feature-icon {
+    color: #007bff;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    min-width: 24px;
+}
+
+.plan-footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.plan-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.plan-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.excellence-section {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 0;
+    background-color: #007bff;
+    color: white;
+    border-radius: 12px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.excellence-section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.region-contact {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}
+
+.region-contact p {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .plans-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .plan-card {
+        margin-bottom: 30px;
+    }
+    
+    .plans-header h1 {
+        font-size: 2rem;
+    }
+    
+    .plans-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .excellence-section h3 {
+        font-size: 1.5rem;
+    }
+}
+@media(min-width:700px){
+.monthly-plans{
+    /* border: 2px solid rgb(255, 0, 0); */
+    /* margin-top: 150px; */
+
+}
+}
