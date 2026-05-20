@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 
-    <title>Novo Padrão</title>
+    <title>Cotação Online</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB6S8Q6JS6">
     </script>
@@ -28,10 +28,6 @@
     </script>
 </head>
 
-<style>
-
-</style>
-
 <body>
 
 
@@ -41,7 +37,7 @@
 
             <div class="div-logo">
                 <a class="navbar-brand" href="/">
-                    <img src="images/Logo2.png" class="logo-nav img-fluid" alt="logotipo da empresa">
+                    <img src="../images/Logo2.png" class="logo-nav img-fluid" alt="logotipo da empresa">
                     <h6><span>Novo Padrão </span> <span> Services</span></h6>
                 </a>
             </div>
@@ -72,10 +68,11 @@
                         <a class="nav-link" href="../#contact">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../pages/plans.html" rel="noopener">Planos Mensais </a>
+                        <a class="nav-link " aria-current="page" href="../pages/plans.html" rel="noopener">Planos
+                            Mensais </a>
                     </li>
                 </ul>
-                <a href="pages/online-quote.html"  rel="noopener">
+                <a href="../pages/online-quote.html" rel="noopener">
                     <button class="btn btn-primary btn-nav">Cotação Online</button>
                 </a>
             </div>
@@ -111,38 +108,62 @@
 
 
         <div class="superior-flex row">
-<!-- Carrossel de texto horizontal -->
-                <div class="horizontal-text-carousel">
-                    <div class="carousel-track">
-                        <span>Agora em Jaú!</span>
-                        <span>Orçamento sem compromisso</span>
-                        <span>Atendimento em Jaú, Bauru e região</span>
-                        <span>Outras cidades - consulte condições</span>
-                        <!-- Repetir os itens para criar um loop contínuo -->
-                        <span>Agora em Jaú!</span>
-                        <span>Orçamento sem compromisso</span>
-                        <span>Atendimento em Jaú, Bauru e região</span>
-                        <span>Outras cidades - consulte condições</span>
+            <!-- Carrossel de texto horizontal -->
+            <div class="horizontal-text-carousel">
+                <div class="carousel-track">
+                    <span>Agora em Jaú!</span>
+                    <span>Orçamento sem compromisso</span>
+                    <span>Atendimento em Jaú, Bauru e região</span>
+                    <span>Outras cidades - consulte condições</span>
+                    <!-- Repetir os itens para criar um loop contínuo -->
+                    <span>Agora em Jaú!</span>
+                    <span>Orçamento sem compromisso</span>
+                    <span>Atendimento em Jaú, Bauru e região</span>
+                    <span>Outras cidades - consulte condições</span>
+                </div>
+            </div>
+
+            <div class="online-quote col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                <h2>Solicite um Orçamento Online</h2>
+                <ol>
+                    <li> Adicione até 5 serviços.</li>
+                    <li>Cada serviço precisa ter no mínimo 3 fotos, medidas e uma descrição detalhada. </li>
+                    <li>O vídeo é único e deve mostrar o ambiente geral.</li>
+                </ol>
+
+
+
+                <!-- Exemplos -->
+                <div class="examples">
+                    <h3>Exemplos de Medidas</h3>
+                    <div class="example-items">
+                        <div>
+                            <img src="../images/tamanho-da-parede.jpg" alt="Exemplo de medidas em parede">
+                            <p>Parede: 6m (comprimento) x 2,5m (altura)</p>
+                        </div>
+                        <div>
+                            <img src="../images/tamanho-do-piso.jpg" alt="Exemplo de medidas em chão">
+                            <p>Chão: 3,45m (comprimento) x 2,80m (largura)</p>
+                        </div>
                     </div>
                 </div>
-            <div class="superior-text col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                
-                <h1>
-                    Construindo o futuro, preservando o presente. Sua edificação segura em nossa mãos.”
-                </h1>
-                <p>
-                    Serviços especializados em manutenção preventiva e corretiva, reformas e vistorias.
-                </p>
+                <hr>
 
-                <a href="#contact">
-                    <button class="btn btn-primary">Solicite um orçamento</button>
-                </a>
+                <!-- Formulário -->
+                <form id="quoteForm">
+                    <div id="services-container"></div>
+
+                    <label for="video">Vídeo único (até 10MB):</label>
+                    <input type="file" id="video" accept="video/*" required>
+
+                    <button type="button" id="addServiceBtn" class="btn btn-secondary">Adicionar Serviço</button>
+                    <button type="submit" class="btn btn-primary">Enviar Orçamento</button>
+                </form>
+
+                <div id="quoteMessage" class="quote-message"></div>
             </div>
 
-            <div class="superior-img col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <img src="images/trabalhador.png" alt="foto de um trabalhador com roupa azul e um cinto de ferramentas"
-                    class="img-fluid">
-            </div>
+
         </div>
 
     </div>
@@ -544,7 +565,7 @@
 
             <div class="description-img  col-xs-12 col-sm-6 col-md-4">
 
-                <img src="images/trabalhador8.png" class="img-fluid" alt="">
+                <img src="../images/trabalhador8.png" class="img-fluid" alt="">
 
             </div>
         </div>
@@ -669,7 +690,7 @@
         </div>
 
         <div class="btn-footer">
-            <a href="pages/online-quote.html"  rel="noopener">
+            <a href="pages/contruction.html" target="_blank" rel="noopener">
                 <button class="btn btn-primary ">Cotação Online</button>
             </a>
         </div>
@@ -725,7 +746,9 @@
 
 
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="../js/online-quote.js"></script>
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

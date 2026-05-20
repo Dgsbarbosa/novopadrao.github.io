@@ -1,0 +1,110 @@
+.online-quote {
+    background: #ffffff; /* fundo branco como no site */
+    color: #333333; /* texto escuro para contraste */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.online-quote h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007bff; /* azul principal do site */
+}
+
+.online-quote ol{
+    font-size: 1rem;
+}
+
+.examples {
+    margin-bottom: 20px;
+}
+
+.example-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.example-items img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 6px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #555555; /* cinza médio */
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #333; /* texto escuro */
+    background: #f9f9f9; /* leve fundo para diferenciar */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background: #fff;
+}
+
+.service-block {
+    background: #f7f7f7; /* fundo alternativo */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-block h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #565e64;
+}
+
+.quote-message {
+    margin-top: 15px;
+    font-weight: bold;
+}
